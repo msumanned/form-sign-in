@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div id="div1"> 
+        <h3>Sign up</h3>
+     </div>
+    <div name="div" id="div2">
+            <input class="input" type="text" placeholder="username" id="userName"> <span id="validation1"></span>
+            
+            <input class="input" type="email" placeholder="Email" id="email" ><span id="validation2"></span>
+
+            <input class="input" type="password" placeholder="Password" id="password"><span id="validation3"></span>
+
+            <input class="input" type="password" placeholder="Confirm password" id="cpassword"><span id="validation4"></span>
+
+            <!-- <input class="input" type="text" placeholder="Gender" id="gender"><span id="validation5"></span>  -->
+
+            <input class="input" type="text" placeholder="Phone number" id="pNumber"><span id="validation6"></span>
+
+            <input class="input" type="date" placeholder="Date of birth" id="dateofbirth"><span id="validation7"></span>
+
+            <input class="input" type="text" placeholder="Address" id="address"><span id="validation8"></span>
+
+            <input class="input" type="text" placeholder="Postal code" id="postalcode"><span id="validation9"></span>
+
+            <input class="file" type="file" name="file" id="file" placeholder="pic"><span id="validation10"></span>
+
+           <input class="input" id="submit" type="submit" value="signup" onClick="signup()">
+            
+    </div>
+
+    <!-- <div id="popup" class="modal" >
+     <h1>Account successfully created</h1>
+     <input type="text" name="" id="" placeholder="Email"> <br> <br>
+     <input type="text" name="" id="" placeholder="password"> <br> <br>
+     <input type="submit" name="submit" id="login" >
+    </div> -->
+
+
+
+    <div id="popup" class="show">
+
+        <input type="email" placeholder="Email" name="email" class="input" id="cemail"><br><br>
+         <span id="validationemail"></span>
+        <input type="password" placeholder="Password" class="input" id="cpass"><br>
+         <span id="validationpass"></span>
+        <p>You don't have an account plz sign up </p><br>
+        <input type="button" value="ok" id="ok" onClick="closepage()">
+        <!-- <button type="ok" id="ok" onClick="closepage()">OK</button> -->
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
